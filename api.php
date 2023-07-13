@@ -131,7 +131,7 @@ else{
         $content = array(
             'code' => "200",
             'msg' => "获取成功",
-            'models' => "$models",
+            'model' => "$models",
             'total_money'=>$mm_money,
             'message'=>"$message",
             'answer'=>"$choices"
