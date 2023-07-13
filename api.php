@@ -76,7 +76,7 @@ function getCurrentDate(){
     $formattedTime = $date->format('Y-m-d\TH:i:sP');
     return $formattedTime;
 }
-@$instructionMessage=$_REQUEST['message'];
+@$instructionMessage = $_REQUEST['message'];
 @$key = $_REQUEST['key'];
 if(empty($instructionMessage)){
     $content=array(
@@ -87,9 +87,9 @@ if(empty($instructionMessage)){
 else{
     $seg_list = Jieba::cut($instructionMessage);
     $seg_list_result = implode(" ",$seg_list);
-    $message_encode=urlencode($seg_list_result);
+    $message_encode = urlencode($seg_list_result);
     $SendUrl = "https://sg.search.yahoo.com/search?p=$message_encode&ei=UTF-8";
-    $requestData=sendPostLw($SendUrl);
+    $requestData = sendPostLw($SendUrl);
     preg_match_all("/aria-label=\"(.*?)\"/",$requestData,$titleMatches);
     preg_match_all("/<span class=\" fc-falcon\">(.*?)<\/span>/",$requestData,$contentMatches);
     preg_match_all("/class=\"d-ib p-abs t-0 l-0 fz-14 lh-20 fc-obsidian wr-bw ls-n pb-4\"><span>(.*?)<\/span><span>/",$requestData,$urlMatches);
@@ -147,9 +147,9 @@ else{
             'code' => "200",
             'msg' => "获取成功",
             'model' => "$models",
-            'total_money'=>$mm_money,
-            'message'=>"$instructionMessage",
-            'answer'=>"$choices"
+            'total_money' => $mm_money,
+            'message' => "$instructionMessage",
+            'answer' => "$choices"
         );
         print_r(json_encode($content,JSON_NUMERIC_CHECK|JSON_PRETTY_PRINT|JSON_UNESCAPED_UNICODE|JSON_UNESCAPED_SLASHES));
         exit();
