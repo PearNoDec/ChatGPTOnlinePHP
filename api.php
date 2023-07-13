@@ -113,7 +113,7 @@ else{
         $keys = $key;
     }
     else{
-        $keys = "这里填入你的Key";
+        $keys = "这里输入你的Key";
     }
     $postdata = array(
         'model' => "gpt-3.5-turbo-16k-0613",
