@@ -1,0 +1,2 @@
+# ChatGPTOnlinePHP
+使用DuckDuckGo接口获取联网文本,提问ChatGPT获取最新的联网回答
