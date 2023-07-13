@@ -17,11 +17,15 @@ ChatGPTOnlinePHP 是一个在 PHP 环境中运行的项目，它可以让用户�
 git clone https://github.com/PearNoDec/ChatGPTOnlinePHP.git
 ```
 
-然后，打开 101 行代码，填入你的 OpenAI Key：
+然后，打开 116 行代码，填入你的 OpenAI Key：
 
 ```php
 $keys = "这里填入你的Key";
 ```
+
+要求使用JieBa库进行问题的分词操作
+
+使用composer安装JieBa库 -> [jieba-php](https://github.com/fukuball/jieba-php)。
 
 ## 使用示例
 
