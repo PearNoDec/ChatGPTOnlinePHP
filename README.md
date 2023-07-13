@@ -28,13 +28,13 @@ $keys = "这里填入你的Key";
 你可以通过如下方式调用 API：
 
 ```
-https://example.com/api/online/?message=2022年的世界杯冠军得主是谁?
+https://example.com/api/online/api.php?message=2022年的世界杯冠军得主是谁?
 ```
 
 如果你想使用你自己的 OpenAI Key，可以这样做：
 
 ```
-https://example.com/api/online/?message=2022年的世界杯冠军得主是谁?&key=xxx
+https://example.com/api/online/api.php?message=2022年的世界杯冠军得主是谁?&key=xxx
 ```
 
 ![Image text](success.png)
